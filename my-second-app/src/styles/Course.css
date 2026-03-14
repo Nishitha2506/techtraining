@@ -1,0 +1,42 @@
+.course-container {
+  width: 85%;
+  margin: auto;
+}
+
+.course-form {
+  margin-bottom: 15px;
+}
+
+.course-form input {
+  padding: 8px;
+  margin-right: 10px;
+}
+
+.search-box {
+  width: 300px;
+  padding: 7px;
+  margin-bottom: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+table th {
+  background: #f2f2f2;
+}
+
+.delete-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}

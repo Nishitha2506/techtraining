@@ -1,0 +1,48 @@
+.attendance-container {
+  width: 90%;
+  margin: auto;
+}
+
+.attendance-form input {
+  padding: 8px;
+  margin-right: 10px;
+}
+
+.filter-box {
+  margin: 15px 0;
+}
+
+.filter-box input {
+  padding: 7px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 7px 12px;
+  background: #1976d2;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+table th {
+  background: #f0f0f0;
+}
+
+.low-attendance {
+  background-color: #ffe6e6;
+  color: red;
+  font-weight: bold;
+}

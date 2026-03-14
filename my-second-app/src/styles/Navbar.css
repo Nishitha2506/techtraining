@@ -1,0 +1,17 @@
+.navbar {
+  background: #1976d2;
+  padding: 10px;
+}
+
+.navbar a {
+  color: white;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+.navbar button {
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+}
