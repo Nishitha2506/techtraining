@@ -7,7 +7,8 @@ import Subject from "./Components/Subject";
 import GPA from "./Components/GPA";
 import Attendance from "./Components/Attendance";
 import UseExample from "./Components/UseExample";
-import Weather from "./Components/Weather";
+import Weather from "./Components/weather";
+
 
 
 
