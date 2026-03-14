@@ -11,25 +11,25 @@ function GPA() {
   const [max, setMax] = useState("");
 
   const fetchAll = async () => {
-    const res = await axios.get("https://techtraining-5um0.onrender.com0/gpas");
+    const res = await axios.get("https://techtraining-5um0.onrender.com/gpas");
     setGpas(res.data);
   };
 
   const saveGpa = async () => {
-    await axios.post("https://techtraining-5um0.onrender.com0/gpa", { gpa });
+    await axios.post("https://techtraining-5um0.onrender.com/gpa", { gpa });
     fetchAll();
   };
 
   const searchByGpa = async () => {
     const res = await axios.get(
-      `https://techtraining-5um0.onrender.com0/gpa/search?value=${gpa}`
+      `https://techtraining-5um0.onrender.com/gpa/search?value=${gpa}`
     );
     setGpas(res.data);
   };
 
   const filterRange = async () => {
     const res = await axios.get(
-      `https://techtraining-5um0.onrender.com0/gpa/range?min=${min}&max=${max}`
+      `https://techtraining-5um0.onrender.com/gpa/range?min=${min}&max=${max}`
     );
     setGpas(res.data);
   };

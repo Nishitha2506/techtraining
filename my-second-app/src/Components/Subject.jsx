@@ -8,19 +8,19 @@ function Subject() {
   const [subjects, setSubjects] = useState([]);
 
   const fetchSubjects = async () => {
-    const res = await axios.get("https://techtraining-5um0.onrender.com0/subjects");
+    const res = await axios.get("https://techtraining-5um0.onrender.com/subjects");
     setSubjects(res.data);
   };
 
   const addSubject = async () => {
-    await axios.post("https://techtraining-5um0.onrender.com0/subject", { subjectName });
+    await axios.post("https://techtraining-5um0.onrender.com/subject", { subjectName });
     setSubjectName("");
     fetchSubjects();
   };
 
   const deleteSubject = async (id) => {
     if (window.confirm("Delete this subject?")) {
-      await axios.delete(`https://techtraining-5um0.onrender.com0/subject/${id}`);
+      await axios.delete(`https://techtraining-5um0.onrender.com/subject/${id}`);
       fetchSubjects();
     }
   };
@@ -31,7 +31,7 @@ function Subject() {
       return;
     }
     const res = await axios.get(
-      `https://techtraining-5um0.onrender.com0/subject/search?name=${name}`
+      `https://techtraining-5um0.onrender.com/subject/search?name=${name}`
     );
     setSubjects(res.data);
   };

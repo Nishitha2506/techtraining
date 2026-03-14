@@ -8,20 +8,20 @@ function Course() {
   const [courses, setCourses] = useState([]);
 
   const fetchCourses = async () => {
-    const res = await axios.get("https://techtraining-5um0.onrender.com0/courses");
+    const res = await axios.get("https://techtraining-5um0.onrender.com/courses");
     setCourses(res.data);
   };
 
   const addCourse = async () => {
     if (!courseName.trim()) return;
-    await axios.post("https://techtraining-5um0.onrender.com0/course", { courseName });
+    await axios.post("https://techtraining-5um0.onrender.com/course", { courseName });
     setCourseName("");
     fetchCourses();
   };
 
   const deleteCourse = async (id) => {
     if (window.confirm("Delete this course?")) {
-      await axios.delete(`https://techtraining-5um0.onrender.com0/course/${id}`);
+      await axios.delete(`https://techtraining-5um0.onrender.com/course/${id}`);
       fetchCourses();
     }
   };
@@ -32,7 +32,7 @@ function Course() {
       return;
     }
     const res = await axios.get(
-      `https://techtraining-5um0.onrender.com0/course/search?name=${name}`
+      `https://techtraining-5um0.onrender.com/course/search?name=${name}`
     );
     setCourses(res.data);
   };

@@ -17,10 +17,10 @@ function Dashboard() {
 
   const fetchStats = async () => {
     try {
-      const courses = await axios.get("https://techtraining-5um0.onrender.com0/courses");
-      const subjects = await axios.get("https://techtraining-5um0.onrender.com0/subjects");
-      const gpas = await axios.get("https://techtraining-5um0.onrender.com0/gpas");
-      const attendance = await axios.get("https://techtraining-5um0.onrender.com0/attendance");
+      const courses = await axios.get("https://techtraining-5um0.onrender.com/courses");
+      const subjects = await axios.get("https://techtraining-5um0.onrender.com/subjects");
+      const gpas = await axios.get("https://techtraining-5um0.onrender.com/gpas");
+      const attendance = await axios.get("https://techtraining-5um0.onrender.com/attendance");
 
       setCourseCount(courses.data.length);
       setSubjectCount(subjects.data.length);
