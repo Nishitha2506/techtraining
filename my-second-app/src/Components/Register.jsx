@@ -13,7 +13,7 @@ function Register(){
         setData({...data,[e.target.name]:e.target.value})
     }
    async function submitForm(){
-       const res=await axios.post("http://localhost:8080/register",data)
+       const res=await axios.post("https://techtraining-5um0.onrender.com0/register",data)
        alert("User Registered Successfully")
        console.log(res.status)
     }

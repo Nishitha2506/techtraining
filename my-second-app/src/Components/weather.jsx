@@ -17,7 +17,7 @@ function Weather() {
       setLoading(true);
 
       const response = await axios.get(
-        `http://localhost:8080/city/${city}`
+        `https://techtraining-5um0.onrender.com0/city/${city}`
       );
 
       setWeather(response.data);
@@ -30,7 +30,7 @@ function Weather() {
   };
 
 //  async function clearCache(){
-//      const res=await   axios.get("http://localhost:8080/clear-cache")
+//      const res=await   axios.get("https://techtraining-5um0.onrender.com0/clear-cache")
 //       .then(() => alert("Cache cleared"))
 //       .catch(() => alert("Error clearing cache"));  
 //   }

@@ -10,12 +10,12 @@ function Attendance() {
   const [filterDays, setFilterDays] = useState("");
 
   const fetchAttendance = async () => {
-    const res = await axios.get("http://localhost:8080/attendance");
+    const res = await axios.get("https://techtraining-5um0.onrender.com0/attendance");
     setAttendanceList(res.data);
   };
 
   const saveAttendance = async () => {
-    await axios.post("http://localhost:8080/attendance", {
+    await axios.post("https://techtraining-5um0.onrender.com0/attendance", {
       presentDays: present,
       absentDays: absent
     });
@@ -26,7 +26,7 @@ function Attendance() {
 
   const filterAttendance = async () => {
     const res = await axios.get(
-      `http://localhost:8080/attendance/filter?days=${filterDays}`
+      `https://techtraining-5um0.onrender.com0/attendance/filter?days=${filterDays}`
     );
     setAttendanceList(res.data);
   };
